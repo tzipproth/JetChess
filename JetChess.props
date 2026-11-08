@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <JetChessRoot>$(MSBuildThisFileDirectory)</JetChessRoot>
+    <OutDir>$(JetChessRoot)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(JetChessRoot)build\obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <WxRoot>$(JetChessRoot)third_party\wxWidgets-3.2.12</WxRoot>
+    <WxLibDir>$(JetChessRoot)build\wxWidgets\lib\vc_x64_lib</WxLibDir>
+    <WxConfig Condition="'$(Configuration)'=='Debug'">mswud</WxConfig>
+    <WxConfig Condition="'$(Configuration)'!='Debug'">mswu</WxConfig>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Debug'">MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary Condition="'$(Configuration)'!='Debug'">MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link><GenerateDebugInformation>true</GenerateDebugInformation><TargetMachine>MachineX64</TargetMachine></Link>
+  </ItemDefinitionGroup>
+</Project>

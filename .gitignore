@@ -1,0 +1,15 @@
+/bin/
+/build/
+/third_party/
+/.migration-original/
+/.vs/
+ipch/
+*.ipch
+*.user
+*.suo
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.ncb
+*.sdf

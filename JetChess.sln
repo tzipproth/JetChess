@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.0.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JetChess", "JetChess\JetChess.vcxproj", "{2329DCE3-7A28-416C-B2B3-B5DB8109A0B8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MoveGen", "MoveGen\MoveGen.vcxproj", "{541827DA-855E-4FC2-8257-313233249B77}"
+EndProject
+Global
+  GlobalSection(SolutionConfigurationPlatforms) = preSolution
+    Debug|x64 = Debug|x64
+    Release|x64 = Release|x64
+  EndGlobalSection
+  GlobalSection(ProjectConfigurationPlatforms) = postSolution
+    {2329DCE3-7A28-416C-B2B3-B5DB8109A0B8}.Debug|x64.ActiveCfg = Debug|x64
+    {2329DCE3-7A28-416C-B2B3-B5DB8109A0B8}.Debug|x64.Build.0 = Debug|x64
+    {2329DCE3-7A28-416C-B2B3-B5DB8109A0B8}.Release|x64.ActiveCfg = Release|x64
+    {2329DCE3-7A28-416C-B2B3-B5DB8109A0B8}.Release|x64.Build.0 = Release|x64
+    {541827DA-855E-4FC2-8257-313233249B77}.Debug|x64.ActiveCfg = Debug|x64
+    {541827DA-855E-4FC2-8257-313233249B77}.Debug|x64.Build.0 = Debug|x64
+    {541827DA-855E-4FC2-8257-313233249B77}.Release|x64.ActiveCfg = Release|x64
+    {541827DA-855E-4FC2-8257-313233249B77}.Release|x64.Build.0 = Release|x64
+  EndGlobalSection
+EndGlobal

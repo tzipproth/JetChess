@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals"><ProjectGuid>{2329DCE3-7A28-416C-B2B3-B5DB8109A0B8}</ProjectGuid><RootNamespace>JetChess</RootNamespace><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType><PlatformToolset>v145</PlatformToolset><CharacterSet>Unicode</CharacterSet>
+    <UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries>
+    <UseDebugLibraries Condition="'$(Configuration)'!='Debug'">false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="..\JetChess.props" />
+  <ItemDefinitionGroup>
+    <ClCompile><LanguageStandard>stdcpp17</LanguageStandard><AdditionalIncludeDirectories>$(JetChessRoot)MoveGen;$(WxLibDir)\$(WxConfig);$(WxRoot)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>__WXMSW__;%(PreprocessorDefinitions)</PreprocessorDefinitions></ClCompile>
+    <ResourceCompile><AdditionalIncludeDirectories>$(WxRoot)\include;$(WxLibDir)\$(WxConfig);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories></ResourceCompile>
+    <Link><AdditionalDependencies Condition="'$(Configuration)'=='Release'">wxmsw32u_core.lib;wxbase32u.lib;wxpng.lib;wxzlib.lib;comctl32.lib;rpcrt4.lib;winmm.lib;shlwapi.lib;version.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;imm32.lib;uxtheme.lib;msimg32.lib;winspool.lib;ws2_32.lib;oleacc.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalDependencies Condition="'$(Configuration)'=='Debug'">wxmsw32ud_core.lib;wxbase32ud.lib;wxpngd.lib;wxzlibd.lib;comctl32.lib;rpcrt4.lib;winmm.lib;shlwapi.lib;version.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;imm32.lib;uxtheme.lib;msimg32.lib;winspool.lib;ws2_32.lib;oleacc.lib;%(AdditionalDependencies)</AdditionalDependencies><SubSystem>Windows</SubSystem><AdditionalLibraryDirectories>$(WxLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories></Link>
+  </ItemDefinitionGroup>
+  <ItemGroup><ClCompile Include="vperft.cpp" /><ClCompile Include="board.cpp" /><ClCompile Include="about.cpp" /><ClCompile Include="help.cpp" /><ClCompile Include="rtf_resources.cpp" /><ClCompile Include="hyperlink.cpp" /><ClInclude Include="board.h" /><ClInclude Include="about.h" /><ClInclude Include="help.h" /><ClInclude Include="rtf_resources.h" /><ClInclude Include="hyperlink.h" /><ResourceCompile Include="vperft.rc" /><ProjectReference Include="..\MoveGen\MoveGen.vcxproj"><Project>{541827DA-855E-4FC2-8257-313233249B77}</Project></ProjectReference></ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Target Name="CheckWxWidgets" BeforeTargets="PrepareForBuild">
+    <Error Condition="!Exists('$(WxLibDir)\$(WxConfig)\wx\setup.h')" Text="wxWidgets fehlt. Zuerst im Projektroot: powershell -ExecutionPolicy Bypass -File tools\build.ps1" />
+  </Target>
+</Project>

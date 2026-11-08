@@ -1,0 +1,274 @@
+[
+  {
+    "fen": "a.fen",
+    "mode": "M",
+    "depth": 1,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "20"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "M",
+    "depth": 2,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "400"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "M",
+    "depth": 3,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "8902"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "M",
+    "depth": 4,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "197281"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "M",
+    "depth": 5,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "4865609"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "M",
+    "depth": 6,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "119060324"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "M",
+    "depth": 7,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "3195901860"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "M",
+    "depth": 8,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "84998978956"
+  },
+  {
+    "fen": "p.fen",
+    "mode": "M",
+    "depth": 1,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "48"
+  },
+  {
+    "fen": "p.fen",
+    "mode": "M",
+    "depth": 2,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "2039"
+  },
+  {
+    "fen": "p.fen",
+    "mode": "M",
+    "depth": 3,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "97862"
+  },
+  {
+    "fen": "p.fen",
+    "mode": "M",
+    "depth": 4,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "4085603"
+  },
+  {
+    "fen": "p.fen",
+    "mode": "M",
+    "depth": 5,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "193690690"
+  },
+  {
+    "fen": "test1.fen",
+    "mode": "M",
+    "depth": 4,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "405385"
+  },
+  {
+    "fen": "ep1.fen",
+    "mode": "M",
+    "depth": 4,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "706058"
+  },
+  {
+    "fen": "pf01.fen",
+    "mode": "M",
+    "depth": 4,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "864019"
+  },
+  {
+    "fen": "n.fen",
+    "mode": "M",
+    "depth": 4,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "1786562"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "P",
+    "depth": 1,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "20"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "P",
+    "depth": 2,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "400"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "P",
+    "depth": 3,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "5362"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "P",
+    "depth": 4,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "72078"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "P",
+    "depth": 3,
+    "hash_mb": 1024,
+    "steps": 2,
+    "result": "5362"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "P",
+    "depth": 3,
+    "hash_mb": 1024,
+    "steps": 4,
+    "result": "5362"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "P",
+    "depth": 3,
+    "hash_mb": 1024,
+    "steps": 8,
+    "result": "5362"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "P",
+    "depth": 3,
+    "hash_mb": 1024,
+    "steps": 16,
+    "result": "5362"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "P",
+    "depth": 3,
+    "hash_mb": 1024,
+    "steps": 32,
+    "result": "5362"
+  },
+  {
+    "fen": "ep1.fen",
+    "mode": "P",
+    "depth": 3,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "11487"
+  },
+  {
+    "fen": "mat101.fen",
+    "mode": "S",
+    "depth": 1,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "Solution:  Rg1-g8  (mate in 1)"
+  },
+  {
+    "fen": "mat201.fen",
+    "mode": "S",
+    "depth": 2,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "Solution:  Rg1-g8  (mate in 2)"
+  },
+  {
+    "fen": "mat301.fen",
+    "mode": "S",
+    "depth": 3,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "Solution:  Nf2-g4  (mate in 3)"
+  },
+  {
+    "fen": "mat505.fen",
+    "mode": "S",
+    "depth": 5,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "Solution:   b2-b4  (mate in 5)"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "S",
+    "depth": 1,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "No mate in 1 moves"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "B",
+    "depth": 1,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "five benchmark positions completed"
+  },
+  {
+    "fen": "a.fen",
+    "mode": "P",
+    "depth": 6,
+    "hash_mb": 1024,
+    "steps": 1,
+    "result": "9417681"
+  }
+]

@@ -1,0 +1,16 @@
+#define wxUSE_NO_MANIFEST 1
+vperft ICON "vperft.ico"
+#include "wx/msw/wx.rc"
+
+copy BITMAP "bitmaps/copy.bmp"
+about BITMAP "bitmaps/about.bmp"
+pieces BITMAP "bitmaps/pieces2.bmp"
+left BITMAP "bitmaps/west.bmp"
+right BITMAP "bitmaps/east.bmp"
+pillar BITMAP "bitmaps/Pillar.bmp"
+
+#define IDR_RTF1 40013
+IDR_RTF1                6   DISCARDABLE     "About.rtf"
+#define IDR_RTF2 40014
+IDR_RTF2                6   DISCARDABLE     "Help.rtf"
+
